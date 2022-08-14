@@ -1,12 +1,14 @@
-//package A3;
-
-//This class contains a constructor of Node, which is already given by the professor. We will use it to insert anagrams.
+//package assignment4;
+//This class is a construction.
 public class Node {
-    String word;
-    Node next;
-
-    public Node(String word) {   //already given by the professor. no need to modify it.
+    public String word;   //each node consists of a word, leftchild and rightchild.
+    public int frequency;
+    public Node leftChild;
+    public Node rightChild;
+    public Node(String word) {
         this.word = word;
-        this.next = null;
+        this.frequency = 1;  //Since we need to calculate the frequency of each element later, we can set the frequency of each element to 1 in the beginning.
     }
 }
+
+
